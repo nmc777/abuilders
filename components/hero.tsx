@@ -13,7 +13,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/40" aria-hidden="true" />
 
-      <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-32">
+      <div className="mx-auto max-w-7xl px-4 py-20 md:px-6 md:py-48">
         <div className="max-w-2xl">
           <div className="mb-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand md:text-sm">
             <span className="h-px w-6 bg-brand md:w-8" />

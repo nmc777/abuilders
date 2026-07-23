@@ -1,23 +1,24 @@
-import { Star, Quote } from "lucide-react"
+import Image from "next/image"
+import { Star } from "lucide-react"
 
 const reviews = [
   {
-    quote:
-      "Driveway done, just as promised! We are so happy with how quickly this project was completed. What a transformation!",
-    name: "Windsor Homeowner",
-    role: "Driveway Replacement",
+    name: "Christina Marie",
+    quote: "Very satisfied customer! Very professional and hard working! Fast replies! Amazing communication! Definitely recommend this company! 5 stars",
+    date: "August 23, 2025",
+    image: "/images/review-christina.jpg",
   },
   {
-    quote:
-      "The team turned our plain garage into something that looks like a showroom. The epoxy floor is gorgeous and easy to clean.",
-    name: "Essex County Client",
-    role: "Epoxy Garage Floor",
+    name: "Rick Cosyn",
+    quote: "Very good work. On time and very fair pricing. Highly recommended.",
+    date: "April 21",
+    image: "/images/review-rick.jpg",
   },
   {
-    quote:
-      "Professional, on time and fair pricing. Our stamped patio completely changed the backyard. Highly recommend A+ Builders.",
-    name: "Local Customer",
-    role: "Stamped Patio",
+    name: "Tina Vance",
+    quote: "Absolutely amazing to work with. Very professional! We are definitely one happy customer 😊 our driveway and walkway look incredible! 100% recommend A+ Builders in company! 5 stars!",
+    date: "August 23, 2025",
+    image: "/images/review-tina.jpg",
   },
 ]
 
@@ -42,16 +43,26 @@ export function Testimonials() {
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 md:mt-12 md:grid-cols-3 md:gap-5">
           {reviews.map((review) => (
-            <blockquote key={review.name} className="relative rounded-lg border border-border bg-card p-5 sm:p-6 md:p-7">
-              <Quote className="h-6 w-6 text-brand sm:h-8 sm:w-8" aria-hidden="true" />
-              <p className="mt-3 text-sm leading-relaxed text-card-foreground sm:mt-4 md:text-base">{review.quote}</p>
-              <footer className="mt-4 border-t border-border pt-3 md:mt-6 md:pt-4">
-                <p className="font-heading text-sm font-bold uppercase tracking-wide text-card-foreground sm:text-base">
-                  {review.name}
+            <div key={review.name} className="relative rounded-lg border border-border bg-card overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="aspect-[4/5] relative bg-muted">
+                <p className="p-4 text-sm leading-relaxed text-card-foreground h-full flex flex-col justify-between">
+                  <span>
+                    <div className="flex gap-1 mb-3">
+                      {[0, 1, 2, 3, 4].map((i) => (
+                        <Star key={i} className="h-3.5 w-3.5 fill-brand text-brand" />
+                      ))}
+                    </div>
+                    "{review.quote}"
+                  </span>
+                  <footer className="border-t border-border pt-3">
+                    <p className="font-heading text-xs font-bold uppercase tracking-wide text-card-foreground">
+                      {review.name}
+                    </p>
+                    <p className="text-[10px] text-muted-foreground">{review.date}</p>
+                  </footer>
                 </p>
-                <p className="text-xs text-muted-foreground md:text-sm">{review.role}</p>
-              </footer>
-            </blockquote>
+              </div>
+            </div>
           ))}
         </div>
       </div>

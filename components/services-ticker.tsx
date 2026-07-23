@@ -11,9 +11,9 @@ const items = [
 
 export function ServicesTicker() {
   return (
-    <div className="bg-brand text-brand-foreground overflow-hidden">
+    <div className="bg-brand text-brand-foreground overflow-hidden py-6 md:py-10">
       <div className="relative">
-        <div className="ticker-content animate-scroll">
+        <div className="ticker-content animate-scroll flex items-center">
           {/* First set */}
           {items.map((item, i) => (
             <span key={`first-${item}`} className="flex items-center gap-3 text-xs font-bold uppercase tracking-wide whitespace-nowrap md:gap-6 md:text-sm">
