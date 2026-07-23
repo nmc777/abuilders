@@ -13,14 +13,14 @@ export function Contact() {
   const [submitted, setSubmitted] = useState(false)
 
   return (
-    <section id="contact" className="bg-ink py-20 text-ink-foreground md:py-28">
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 md:grid-cols-2 md:px-6">
+    <section id="contact" className="bg-ink py-16 text-ink-foreground md:py-28">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 md:gap-12 md:grid-cols-2 md:px-6">
         <div>
-          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-brand">Get In Touch</p>
-          <h2 className="font-heading text-4xl font-bold uppercase leading-tight text-balance md:text-5xl">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand md:text-sm">Get In Touch</p>
+          <h2 className="font-heading text-2xl font-bold uppercase leading-tight text-balance sm:text-3xl md:text-5xl">
             Request a free estimate
           </h2>
-          <p className="mt-5 max-w-md text-lg leading-relaxed text-ink-foreground/75">
+          <p className="mt-4 max-w-md text-base leading-relaxed text-ink-foreground/75 md:mt-5 md:text-lg">
             Tell us about your project and we'll get back to you fast with honest, upfront pricing.
             Free, no-obligation quotes across Windsor-Essex.
           </p>
@@ -36,11 +36,11 @@ export function Contact() {
                     {item.label}
                   </p>
                   {item.href ? (
-                    <a href={item.href} className="text-lg font-bold hover:text-brand">
+                    <a href={item.href} className="text-base font-bold hover:text-brand focus:outline-none focus:ring-2 focus:ring-brand rounded-sm px-2 py-1 md:text-lg">
                       {item.value}
                     </a>
                   ) : (
-                    <p className="text-lg font-bold">{item.value}</p>
+                    <p className="text-base font-bold md:text-lg">{item.value}</p>
                   )}
                 </div>
               </li>
@@ -83,7 +83,7 @@ export function Contact() {
                 <select
                   id="service"
                   name="service"
-                  className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-brand focus:ring-2 focus:ring-brand/30"
+                  className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-brand focus:ring-2 focus:ring-brand/30 focus:ring-offset-2 focus:ring-offset-ink"
                 >
                   <option>Driveway</option>
                   <option>Epoxy Garage Floor</option>
@@ -102,12 +102,12 @@ export function Contact() {
                   name="message"
                   rows={4}
                   placeholder="Tell us about your project..."
-                  className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-brand focus:ring-2 focus:ring-brand/30"
+                  className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-brand focus:ring-2 focus:ring-brand/30 focus:ring-offset-2 focus:ring-offset-ink"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full rounded-sm bg-brand px-6 py-4 text-sm font-bold uppercase tracking-wide text-brand-foreground transition-transform hover:-translate-y-0.5"
+                className="w-full rounded-sm bg-brand px-6 py-3 text-sm font-bold uppercase tracking-wide text-brand-foreground transition-transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ink focus:ring-brand sm:py-4"
               >
                 Request My Free Estimate
               </button>
@@ -144,7 +144,7 @@ function Field({
         type={type}
         placeholder={placeholder}
         required={required}
-        className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-brand focus:ring-2 focus:ring-brand/30"
+        className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-brand focus:ring-2 focus:ring-brand/30 focus:ring-offset-2 focus:ring-offset-ink"
       />
     </div>
   )

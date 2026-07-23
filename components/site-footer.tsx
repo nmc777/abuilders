@@ -22,7 +22,7 @@ const nav = [
 export function SiteFooter() {
   return (
     <footer className="bg-ink text-ink-foreground">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-4 md:px-6">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-4 md:gap-10 md:px-6 md:py-16">
         <div className="md:col-span-1">
           <div className="flex items-center gap-3">
             <Image
@@ -33,22 +33,22 @@ export function SiteFooter() {
               className="h-12 w-12 rounded-sm object-contain"
             />
             <span className="flex flex-col leading-none">
-              <span className="font-heading text-lg font-bold uppercase tracking-wide">A+ Builders</span>
-              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-brand">
+              <span className="font-heading text-base font-bold uppercase tracking-wide sm:text-lg">A+ Builders</span>
+              <span className="text-[9px] font-semibold uppercase tracking-[0.2em] text-brand sm:text-[10px]">
                 Concrete Specialist
               </span>
             </span>
           </div>
-          <p className="mt-4 text-sm leading-relaxed text-ink-foreground/70">
+          <p className="mt-3 text-xs leading-relaxed text-ink-foreground/70 sm:mt-4 sm:text-sm">
             Turning plain concrete into stunning, durable surfaces across Windsor & Essex County, Ontario.
           </p>
-          <div className="mt-5 flex gap-3">
+          <div className="mt-4 flex gap-3">
             <a
               href="https://www.instagram.com/abuilders_inc"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="A+ Builders on Instagram"
-              className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 transition-colors hover:bg-brand hover:text-brand-foreground"
+              className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 transition-colors hover:bg-brand hover:text-brand-foreground focus:outline-none focus:ring-2 focus:ring-brand"
             >
               <InstagramIcon />
             </a>
@@ -57,7 +57,7 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="A+ Builders on Facebook"
-              className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 transition-colors hover:bg-brand hover:text-brand-foreground"
+              className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 transition-colors hover:bg-brand hover:text-brand-foreground focus:outline-none focus:ring-2 focus:ring-brand"
             >
               <FacebookIcon />
             </a>
@@ -65,11 +65,11 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h3 className="font-heading text-sm font-bold uppercase tracking-wide text-brand">Services</h3>
-          <ul className="mt-4 space-y-2.5">
+          <h3 className="font-heading text-xs font-bold uppercase tracking-wide text-brand sm:text-sm">Services</h3>
+          <ul className="mt-3 space-y-2 sm:mt-4 sm:space-y-2.5">
             {services.map((s) => (
               <li key={s}>
-                <a href="#services" className="text-sm text-ink-foreground/70 hover:text-brand">
+                <a href="#services" className="text-xs text-ink-foreground/70 hover:text-brand focus:outline-none focus:ring-2 focus:ring-brand rounded-sm px-2 py-1 sm:text-sm">
                   {s}
                 </a>
               </li>
@@ -78,11 +78,11 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h3 className="font-heading text-sm font-bold uppercase tracking-wide text-brand">Company</h3>
-          <ul className="mt-4 space-y-2.5">
+          <h3 className="font-heading text-xs font-bold uppercase tracking-wide text-brand sm:text-sm">Company</h3>
+          <ul className="mt-3 space-y-2 sm:mt-4 sm:space-y-2.5">
             {nav.map((n) => (
               <li key={n.href}>
-                <a href={n.href} className="text-sm text-ink-foreground/70 hover:text-brand">
+                <a href={n.href} className="text-xs text-ink-foreground/70 hover:text-brand focus:outline-none focus:ring-2 focus:ring-brand rounded-sm px-2 py-1 sm:text-sm">
                   {n.label}
                 </a>
               </li>
@@ -91,10 +91,10 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h3 className="font-heading text-sm font-bold uppercase tracking-wide text-brand">Contact</h3>
-          <ul className="mt-4 space-y-3">
+          <h3 className="font-heading text-xs font-bold uppercase tracking-wide text-brand sm:text-sm">Contact</h3>
+          <ul className="mt-3 space-y-2 sm:mt-4 sm:space-y-3">
             <li>
-              <a href="tel:+15198906268" className="flex items-center gap-3 text-sm hover:text-brand">
+              <a href="tel:+15198906268" className="flex items-center gap-3 text-xs text-ink-foreground/70 hover:text-brand focus:outline-none focus:ring-2 focus:ring-brand rounded-sm px-2 py-1 sm:text-sm">
                 <Phone className="h-4 w-4 text-brand" aria-hidden="true" />
                 519-890-6268
               </a>
@@ -102,7 +102,7 @@ export function SiteFooter() {
             <li>
               <a
                 href="mailto:abuildersinc@hotmail.com"
-                className="flex items-center gap-3 text-sm hover:text-brand"
+                className="flex items-center gap-3 text-xs text-ink-foreground/70 hover:text-brand focus:outline-none focus:ring-2 focus:ring-brand rounded-sm px-2 py-1 sm:text-sm"
               >
                 <Mail className="h-4 w-4 text-brand" aria-hidden="true" />
                 abuildersinc@hotmail.com
@@ -111,7 +111,7 @@ export function SiteFooter() {
           </ul>
           <a
             href="#contact"
-            className="mt-5 inline-block rounded-sm bg-brand px-5 py-3 text-sm font-bold uppercase tracking-wide text-brand-foreground"
+            className="mt-4 inline-block rounded-sm bg-brand px-4 py-2 text-xs font-bold uppercase tracking-wide text-brand-foreground focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ink focus:ring-brand sm:mt-5 sm:px-5 sm:py-3 sm:text-sm"
           >
             Free Estimate
           </a>

@@ -35,32 +35,32 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-ink py-20 text-ink-foreground md:py-28">
+    <section id="services" className="bg-ink py-16 text-ink-foreground md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <div className="max-w-2xl">
-          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-brand">What We Do</p>
-          <h2 className="font-heading text-4xl font-bold uppercase leading-tight text-balance md:text-5xl">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand md:text-sm">What We Do</p>
+          <h2 className="font-heading text-2xl font-bold uppercase leading-tight text-balance sm:text-3xl md:text-5xl">
             Complete concrete solutions
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-ink-foreground/75">
+          <p className="mt-4 text-base leading-relaxed text-ink-foreground/75 md:text-lg">
             From the ground up or a fresh coat over the old — we handle every kind of concrete surface
             for homes and businesses across Windsor-Essex.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 md:mt-12 md:gap-5">
           {services.map((service) => (
             <div
               key={service.title}
-              className="group rounded-lg border border-white/10 bg-white/[0.03] p-7 transition-colors hover:border-brand"
+              className="group rounded-lg border border-white/10 bg-white/[0.03] p-5 transition-colors hover:border-brand focus-within:border-brand md:p-7"
             >
               <span className="flex h-12 w-12 items-center justify-center rounded-sm bg-brand text-brand-foreground">
                 <service.icon className="h-6 w-6" aria-hidden="true" />
               </span>
-              <h3 className="mt-5 font-heading text-xl font-bold uppercase tracking-wide">
+              <h3 className="mt-4 font-heading text-lg font-bold uppercase tracking-wide md:mt-5 md:text-xl">
                 {service.title}
               </h3>
-              <p className="mt-2 leading-relaxed text-ink-foreground/70">{service.desc}</p>
+              <p className="mt-2 text-sm leading-relaxed text-ink-foreground/70 md:text-base">{service.desc}</p>
             </div>
           ))}
         </div>

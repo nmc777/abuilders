@@ -13,35 +13,35 @@ export function Hero() {
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/40" aria-hidden="true" />
 
-      <div className="mx-auto max-w-7xl px-4 py-24 md:px-6 md:py-32">
+      <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-32">
         <div className="max-w-2xl">
-          <div className="mb-5 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand">
-            <span className="h-px w-8 bg-brand" />
+          <div className="mb-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand md:text-sm">
+            <span className="h-px w-6 bg-brand md:w-8" />
             Windsor, Ontario
           </div>
 
-          <h1 className="font-heading text-5xl font-bold uppercase leading-[0.95] text-balance md:text-7xl">
+          <h1 className="font-heading text-3xl font-bold uppercase leading-[0.95] text-balance sm:text-4xl md:text-7xl">
             Transforming concrete,
             <br />
             <span className="text-brand">one surface at a time</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-foreground/80">
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-foreground/80 md:mt-6 md:text-lg">
             A+ Builders turns plain, tired concrete into stunning, durable surfaces. Driveways, patios,
             walkways, stamped and decorative finishes — built to last through every Ontario winter.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-8">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 rounded-sm bg-brand px-7 py-4 text-sm font-bold uppercase tracking-wide text-brand-foreground transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 rounded-sm bg-brand px-5 py-3 text-xs font-bold uppercase tracking-wide text-brand-foreground transition-transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ink focus:ring-brand sm:px-7 sm:py-4 sm:text-sm"
             >
               Get a Free Estimate
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </a>
             <a
               href="#gallery"
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 px-7 py-4 text-sm font-bold uppercase tracking-wide text-ink-foreground transition-colors hover:border-brand hover:text-brand"
+              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 px-5 py-3 text-xs font-bold uppercase tracking-wide text-ink-foreground transition-colors hover:border-brand hover:text-brand focus:outline-none focus:ring-2 focus:ring-brand sm:px-7 sm:py-4 sm:text-sm"
             >
               View Our Work
             </a>

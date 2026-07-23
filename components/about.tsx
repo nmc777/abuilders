@@ -10,8 +10,8 @@ const points = [
 
 export function About() {
   return (
-    <section className="bg-background py-20 md:py-28">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 md:grid-cols-2 md:px-6">
+    <section className="bg-background py-16 md:py-28">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 md:gap-12 md:grid-cols-2 md:px-6">
         <div className="relative">
           <div className="overflow-hidden rounded-lg">
             <Image
@@ -22,25 +22,25 @@ export function About() {
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="absolute -bottom-6 -right-4 hidden rounded-lg bg-ink px-8 py-6 text-ink-foreground shadow-xl sm:block">
-            <p className="font-heading text-4xl font-bold text-brand">100%</p>
-            <p className="text-xs font-semibold uppercase tracking-wide text-ink-foreground/80">
+          <div className="absolute -bottom-4 -right-2 hidden rounded-lg bg-ink px-6 py-4 text-ink-foreground shadow-xl sm:-bottom-6 sm:-right-4 sm:px-8 sm:py-6">
+            <p className="font-heading text-3xl font-bold text-brand sm:text-4xl">100%</p>
+            <p className="text-[10px] font-semibold uppercase tracking-wide text-ink-foreground/80 sm:text-xs">
               Customer recommended
             </p>
           </div>
         </div>
 
         <div>
-          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-brand">Who We Are</p>
-          <h2 className="font-heading text-4xl font-bold uppercase leading-tight text-balance md:text-5xl">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand md:text-sm">Who We Are</p>
+          <h2 className="font-heading text-2xl font-bold uppercase leading-tight text-balance sm:text-3xl md:text-5xl">
             Concrete done right, the first time
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground md:mt-5 md:text-lg">
             A+ Builders is a Windsor-based concrete coating and contracting team specializing in
             driveways, garages, patios and decorative surfaces. We take plain, worn concrete and
             transform it into finishes that look incredible and hold up for years.
           </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
+          <p className="mt-3 text-base leading-relaxed text-muted-foreground md:mt-4">
             Whether it's a brand-new driveway or a garage floor makeover, we treat every project like
             it's our own home — with honest pricing and workmanship you can stand on.
           </p>

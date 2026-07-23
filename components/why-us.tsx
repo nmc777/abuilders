@@ -25,25 +25,25 @@ const features = [
 
 export function WhyUs() {
   return (
-    <section id="why-us" className="bg-secondary py-20 md:py-28">
+    <section id="why-us" className="bg-secondary py-16 md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-brand">Why A+ Builders</p>
-          <h2 className="font-heading text-4xl font-bold uppercase leading-tight text-balance md:text-5xl">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand md:text-sm">Why A+ Builders</p>
+          <h2 className="font-heading text-2xl font-bold uppercase leading-tight text-balance sm:text-3xl md:text-5xl">
             Built on quality &amp; trust
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 md:mt-12 md:gap-5">
           {features.map((feature) => (
-            <div key={feature.title} className="rounded-lg bg-card p-7 text-center shadow-sm">
-              <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand text-brand-foreground">
-                <feature.icon className="h-7 w-7" aria-hidden="true" />
+            <div key={feature.title} className="rounded-lg bg-card p-5 text-center shadow-sm sm:p-6 md:p-7">
+              <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brand text-brand-foreground sm:h-14 sm:w-14">
+                <feature.icon className="h-6 w-6 sm:h-7 sm:w-7" aria-hidden="true" />
               </span>
-              <h3 className="mt-5 font-heading text-lg font-bold uppercase tracking-wide text-card-foreground">
+              <h3 className="mt-4 font-heading text-base font-bold uppercase tracking-wide text-card-foreground sm:mt-5 sm:text-lg">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.desc}</p>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">{feature.desc}</p>
             </div>
           ))}
         </div>

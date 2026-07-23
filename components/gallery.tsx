@@ -11,16 +11,16 @@ const projects = [
 
 export function Gallery() {
   return (
-    <section id="gallery" className="bg-background py-20 md:py-28">
+    <section id="gallery" className="bg-background py-16 md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
-        <div className="mb-12 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <div className="mb-8 flex flex-col justify-between gap-4 md:mb-12 md:flex-row md:items-end">
           <div className="max-w-2xl">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-brand">Our Work</p>
-            <h2 className="font-heading text-4xl font-bold uppercase leading-tight text-balance md:text-5xl">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand md:text-sm">Our Work</p>
+            <h2 className="font-heading text-2xl font-bold uppercase leading-tight text-balance sm:text-3xl md:text-5xl">
               Recent projects
             </h2>
           </div>
-          <p className="max-w-sm text-muted-foreground">
+          <p className="max-w-sm text-sm text-muted-foreground md:text-base">
             A look at some of the transformations we've delivered across Windsor and Essex County.
           </p>
         </div>
@@ -38,11 +38,11 @@ export function Gallery() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" aria-hidden="true" />
-              <figcaption className="absolute inset-x-0 bottom-0 p-5">
-                <span className="inline-block rounded-sm bg-brand px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-brand-foreground">
+              <figcaption className="absolute inset-x-0 bottom-0 p-3 sm:p-4 md:p-5">
+                <span className="inline-block rounded-sm bg-brand px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-brand-foreground sm:px-2.5 sm:text-[11px]">
                   {project.tag}
                 </span>
-                <p className="mt-2 font-heading text-lg font-bold uppercase tracking-wide text-ink-foreground">
+                <p className="mt-2 font-heading text-base font-bold uppercase tracking-wide text-ink-foreground sm:text-lg">
                   {project.title}
                 </p>
               </figcaption>
